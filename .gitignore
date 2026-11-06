@@ -1,0 +1,11 @@
+# Python Virtual Environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE / Editor settings
+.vscode/
+
+# Environment variables & database credentials
+.env
