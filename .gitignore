@@ -9,3 +9,6 @@ __pycache__/
 
 # Environment variables & database credentials
 .env
+
+# DuckDB database
+*.duckdb
