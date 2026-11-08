@@ -12,3 +12,9 @@ __pycache__/
 
 # DuckDB database
 *.duckdb
+
+# dbt
+ecom_transform/target/
+ecom_transform/dbt_packages
+ecom_transform/logs
+logs/
