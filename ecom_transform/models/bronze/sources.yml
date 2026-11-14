@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: postgres_oltp
+    description: "Raw OLTP tables populated by Python Faker in PostgreSQL"
+    meta:
+      external_database: "postgres_scan('host=localhost port=5432 dbname=ecommerce_source user=postgres password=password123', 'public', '{name}')"
+    schema: public
+    tables:
+      - name: users
+        description: "Raw user records from OLTP database"
+      - name: products
+        description: "Raw product catalog records from OLTP database"
+      - name: orders
+        description: "Raw order header records from OLTP database"
+      - name: order_items
+        description: "Raw order line item records from OLTP database"
